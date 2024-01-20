@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100;
+  max-width: 100vw;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.container .box {
+  background-color: rgb(97, 97, 97);
+  width: 300px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* .container :nth-child(1) {
+  order: 2;
+}
+.container :nth-child(2) {
+  order: 3;
+}
+.container :nth-child(3) {
+  order: 1;
+}
+.container :nth-child(4) {
+  order: 6;
+}
+.container :nth-child(5) {
+  order: 4;
+}
+.container :nth-child(6) {
+  order: 5;
+} */
+
+/* Destop */
+
+/* @media (max-width: 1500px) {
+  .container :nth-child(4) {
+    background-color: red;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+} */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .container :nth-child(4) {
+    background-color: blue;
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+ 
+  .container :nth-child(4) {
+    background-color: green;
+    display: block;
+  }
+}
+
+p {
+  font-size: 20px;
+  width: 50vw;
+  height: 500px;
+  background-color: red;
+}
+
+       
+/* 
+width 200%
+
+font --> 1 rem
+
+width 
+
+parent vw
+child %
+
+height
+
+parent vh
+child %
+
+padding 20rem
+grid
+
+flex
+
+*/
+/* 1000px 100vh
+
+20px  1.2rem
+
+100px 5rem
+
+1rem = 16px  */
