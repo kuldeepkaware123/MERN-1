@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap");
+
+:root {
+  --main-font: "Source Serif 4", serif;
+  --main-color: #0d0c22;
+  --bg-color: #f8f7f4;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 300vh;
+  background-color: var(--bg-color);
+  font-size: var(--main-font);
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* scroll bar with main-color and background transparent */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: #f81056;
+}
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 5px;
+}
+
+/* Slider CSS */
+
+.hero-slider {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  > .slider-container {
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+    width: 100%;
+    > .img {
+      width: 273px;
+      height: 340px;
+      display: inline-block;
+      margin: 0.5rem;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+  > .slider-container:nth-child(2) {
+    margin-left: 28%;
+  }
+}
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
