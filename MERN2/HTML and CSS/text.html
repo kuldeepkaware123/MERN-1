@@ -1,0 +1,135 @@
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        jQuery(function ($) {
+            $('.personal').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Personal-Care.png)');
+            });
+            $('.personal').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.food-be').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Food-and-Beverage.png)');
+            });
+            $('.food-be').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.perfum').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Perfumary.png)');
+            });
+            $('.perfum').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.health').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Healthcare-and-Pharma.png)');
+            });
+            $('.health').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.home').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Home-and-Industrial-Care.png)');
+            });
+            $('.home').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.ayurvedic').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Ayurvedic-and-Herbals.png)');
+            });
+            $('.ayurvedic').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.chemicals').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Chemicals.png)');
+            });
+            $('.chemicals').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.food-in').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Food-ingredients.png)');
+            });
+            $('.food-in').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.pharma').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Pharmaceuticals.png)');
+            });
+            $('.pharma').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.nutra').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Nutraceuticals.png)');
+            });
+            $('.nutra').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.fragrance-in').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Fragrance-Ingredients.png)');
+            });
+            $('.fragrance-in').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+            $('.cosmetic').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Cosmetic-Ingredients.png)');
+            });
+            $('.cosmetic').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/istockphoto-1482799777-1024x1024-1-e1706522141681.jpg)');
+            });
+
+            $('.herbal').mouseenter(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/01/Herbal-Ingredients.png)');
+            });
+            $('.herbal').mouseleave(function () {
+                $('#naturesection').css('background-image', 'url(/wp-content/uploads/2024/02/istockphoto-1284072149-1024x1024-1.jpg)');
+            });
+
+
+        });
+    });
+
+</script>
+
+<style>
+    #naturesection {
+        transition: background 0.4s ease-in-out all;
+    }
+</style>
+
+
+<!-- map -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        jQuery(function ($) {
+            // Example: Change iframe src on click
+            $('.dubai').click(function () {
+                // Change the src attribute of the iframe to the new map address
+                $('#map').attr('src', 'https://maps.google.com/maps?q=Nuplanet%20International%20L.L.C-FZ%20Dubai%2C%20&t=m&z=5&output=embed&iwloc=near');
+            });
+            $('.delhi').click(function () {
+                // Change the src attribute of the iframe to the new map address
+                $('#map').attr('src', 'https://maps.google.com/maps?q=B%2051%2C%20Okhla%20Phase%201%2C%20New%20Delhi%2C%20India%2C%20110020&t=m&z=5&output=embed&iwloc=near');
+            });
+            $('.warehouse').click(function () {
+                // Change the src attribute of the iframe to the new map address
+                $('#map').attr('src', 'https://maps.google.com/maps?q=13-A%20%20Burari%20Road%2C%20Swaroop%20Nagar%20Near%20Sangam%20Dharmkata%2C%20Delhi%2C%20India%2C%20110042&t=m&z=5&output=embed&iwloc=near');
+            });
+        });
+    });
+</script>
+<style>
+    .dubai:hover,
+    .delhi:hover,
+    .warehouse:hover {
+        cursor: pointer;
+    }
+</style>

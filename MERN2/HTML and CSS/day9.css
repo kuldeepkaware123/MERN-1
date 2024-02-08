@@ -1,0 +1,37 @@
+/* selectors */
+h1 {
+  /* property : value */
+  color: red;
+  font-size: 20px;
+}
+/* class */
+.firstClass {
+  background-color: aquamarine;
+  border: 2px solid red;
+}
+.change-color {
+  color: blue;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+  border: 2px solid;
+  padding: 5px 10px;
+  background-color: rgb(184, 123, 44);
+  > .slink {
+    color: white;
+    text-decoration: none;
+  }
+}
+section {
+  height: 100vh;
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+#second {
+  background-color: lightgreen;
+}
+/*  */

@@ -1,0 +1,71 @@
+.second-section h1 span {
+  color: red;
+}
+
+.second-section {
+  background-color: antiquewhite;
+  > h1 {
+    > span {
+      color: blue;
+    }
+  }
+}
+div:hover {
+  border: 2px solid green;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+a:visited {
+  color: pink;
+}
+a:hover {
+  color: rgb(255, 10, 51);
+}
+a:link {
+  color: aqua;
+}
+p:first-child {
+  color: red;
+}
+p::first-line {
+  color: rgb(22, 255, 1);
+}
+h1::first-letter {
+  font-size: 25px;
+  color: rgb(6, 206, 93);
+}
+p::selection {
+  background-color: yellow;
+  color: black;
+}
+/* 1 + 1000 = 1001 */
+* {
+  text-transform: uppercase;
+  color: red !important;
+  > h1 {
+    background-color: pink;
+  }
+}
+
+h1 {
+  color: rgb(160, 255, 92) !important;
+}
+.head-text {
+  color: blue !important;
+}
+#head-text-id {
+  color: green !important;
+}
+
+div {
+  color: blue;
+}
+/* id --> 1000 */
+/* class --> 100 */
+/* tag name --> 10 */
+/* * --> 1 */
+/* !important  --> +1000 */
